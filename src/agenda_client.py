@@ -8,7 +8,7 @@ class AgendaClient:
 		self.out_sock.bind("tcp://{}:{}".format(ip, port))
 
 	def start_agenda(self):
-		
+		pass
 
 	# NODE OPERATION METHODS
 	def add_node(self, alias, ip, port):
