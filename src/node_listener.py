@@ -12,7 +12,10 @@ class NodeListener:
 
 		self.out_sock = context.socket(zmq.PUSH)
 		self.out_sock.bind("tcp://{}:{}".format(out_ip, out_port))
-		
+
+		self.add_cmd = 'add'
+		self.rm_cmd = 'rm'
+		self.upd_cmd = 'update'
 		self.cron_daemon = Crontab()
 
 	# TODO: add support for more complex jobs (e.g not just min or hour)

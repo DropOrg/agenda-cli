@@ -7,6 +7,9 @@ class AgendaClient:
 		self.out_sock = self.zmq_context.socket(zmq.PUSH)
 		self.out_sock.bind("tcp://{}:{}".format(ip, port))
 
+	def start_agenda(self):
+		
+
 	# NODE OPERATION METHODS
 	def add_node(self, alias, ip, port):
 		job = {
